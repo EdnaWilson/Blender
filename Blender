@@ -1,0 +1,67 @@
+#include<stdio.h>
+
+int main() {
+
+int a[5]; /* result vector */
+
+int b[5], c[5]; /* vectors to be added or subtracted */
+
+int n, i, o; /* n is vector size, i is for looping and o is for operation performed */
+
+/* clrscr(); use clrscr() after variable declaration to clear console */
+
+/* read vectors b and c */
+
+printf("Enter number of process: \n");
+
+scanf("%d", &n);
+
+printf("Enter the Operation for Add enter 1 for Sub enter 2 : \n");
+
+scanf("%d", &o);
+
+FILE *f = fopen("komal.txt", "w");
+
+printf("Enter elements of vector b:\n");
+
+for (i = 0; i < n; i++)
+
+   scanf("%d", &b[i]);
+
+   printf("Enter elements of vector c:\n");
+
+   for (i = 0; i < n; i++)
+
+    scanf("%d", &c[i]);
+
+    /* perform vector addition */
+
+    for (i = 0; i < n; i++)
+
+         if(o == 1){
+
+       a[i] = b[i] + c[i];
+
+         }else if(o == 2){
+
+             a[i] = b[i] - c[i];
+
+          }else{
+
+             printf("Provided opertaion is not valid");
+
+         }
+
+    /* print addition vector a */
+
+    printf("Addition vector:\n");
+
+    for (i = 0; i < n; i++)
+
+   /* printf("%d ", a[i]); */
+
+   fprintf(f, "%d\n", a[i]);
+
+   /*   getch(); pauses the Output Console until a key is pressed */
+
+}
