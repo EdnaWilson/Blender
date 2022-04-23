@@ -1,1 +1,2 @@
 # Blender
+A blender (sometimes called a mixer or liquidiser in British English) is a kitchen and laboratory appliance used to mix, crush, purée or emulsify food and other substances. A stationary blender consists of a blender container with a rotating metal blade at the bottom, powered by an electric motor that is in the base. Some powerful models can also crush ice and other frozen foods. The newer immersion blender configuration has a motor on top connected by a shaft to a rotating blade at the bottom, which can be used with any container.
